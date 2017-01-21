@@ -8,6 +8,22 @@ _To read a file into the environment, eg. after editing a dotfile._<br>
 
 _Start the ssh-agent plugin._
 
+## **grep**
+
+_Search inside of files._<br>
+`grep search_term target/location -i`
+
+## **find**
+
+_Search for files, can be made fuzzy._<br>
+`find . -name "*.txt"`
+
+## **nslookup**
+
+_Get the IP from a CNAME._<br>
+`nslookup somesite.com`
+
+
 ## **bindkey**
 
 _Without arguments will list keyboard shorcut bindings._
