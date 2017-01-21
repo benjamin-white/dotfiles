@@ -56,8 +56,11 @@ _Extract an archive._
 _Best practice using SSH keys._<br>
 http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
 
-_Good exercise for getting more comfortable at the command line._
+_Good exercise for getting more comfortable at the command line._<br>
 https://github.com/makersacademy/clmystery
+
+_Advanced use cases._<br>
+http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/
 
 _Renaming your user account (delete later!)._<br>
 _Golden rule seems to be create a temp account to do it with!_<br>
