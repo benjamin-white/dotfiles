@@ -25,6 +25,18 @@ _Without arguments will list keyboard shorcut bindings._
     "^J" accept-line
     and so on...
 
+_The most useful ones..._
+
+    Ctrl+a => Move to the beginning of the line
+    Ctrl+e => Move to the end of the line
+    Ctrl+u => Delete the line
+    Ctrl+k => Delete characters after the cursor position
+    Ctrl+w => Delete previous word
+    Alt+d  => Delete next word
+    Ctrl+_ => Undo
+    Ctrl+l => Clear the screen
+
+
 ## **take**
 
 _Basically..._
@@ -34,6 +46,10 @@ _Basically..._
 ## **$?**
 
 _Exit status of last command._
+
+## **x**
+
+_Extract an archive._
 
 # **Helpful Articles**
 
@@ -49,3 +65,13 @@ _Golden rule seems to be create a temp account to do it with!_<br>
 * https://support.microsoft.com/en-gb/help/2454362/renaming-a-user-account-does-not-automatically-change-the-profile-path
 
 * https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_security/rename-user-account-folder-in-windows-10-preview/88033eca-6b32-47c5-90ac-a5e7af17d094
+
+_The synopsis from those links..._
+
+* Creat a new user with admin rights
+* Login as the newly created user
+* Rename the original user
+* Manually rename the folder under C://Users
+* Use Regedit to change HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\&lt;User SID&gt;\
+* Cross your fingers
+* Reboot into the renamed user account!
