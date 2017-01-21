@@ -1,0 +1,10 @@
+Transparency=off
+OpaqueWhenFocused=no
+BoldAsFont=yes
+WindowShortcuts=yes
+CopyOnSelect=no
+ClicksPlaceCursor=yes
+RightClickAction=menu
+Term=xterm-256color
+BackspaceSendsBS=no
+BackgroundColour=81,81,81
