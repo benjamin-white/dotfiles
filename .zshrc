@@ -84,10 +84,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-mkd() { # creates a directory and places you in it
-  mkdir -p $1
-  cd $1
-}
+# don't need this use, take?
+# mkd() { # creates a directory and places you in it
+#   mkdir -p $1
+#   cd $1
+# }
 
+# command aliases
 alias gcm="git commit -m"
+
+# default editor aliases
+alias -s rb=atom
+alias -s js=atom
+alias -s txt=atom
+alias -s php=atom
+alias -s htm=atom
+alias -s html=atom
+alias -s css=atom
+alias -s scss=atom
+alias -s md=atom
+
 alias sites="cd /c/xampp/htdocs/"
