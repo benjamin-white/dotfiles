@@ -80,3 +80,4 @@ http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-sh
 
 _People doing cool stuff._<br>
 https://github.com/sindresorhus/pure
+https://github.com/powerline/fonts/blob/master/install.sh
