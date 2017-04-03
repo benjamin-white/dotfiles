@@ -11,5 +11,5 @@ BackgroundColour=81,81,81
 CursorType=block
 Font=Consolas
 FontIsBold=yes
-FontHeight=12
+FontHeight=11
 Scrollbar=none
