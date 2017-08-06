@@ -55,6 +55,7 @@ plugins=(git zsh-syntax-highlighting)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export LANG=de_AT.UTF-8
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,6 +93,11 @@ source $ZSH/oh-my-zsh.sh
 
 # command aliases
 alias gcm="git commit -m"
+alias gpl="git pull origin"
+alias gps="git push origin"
+alias glog_="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
+alias glog__="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
+alias glog___="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'"
 
 # default editor aliases
 alias -s rb=atom
@@ -104,4 +110,4 @@ alias -s css=atom
 alias -s scss=atom
 alias -s md=atom
 
-alias sites="cd /c/xampp/htdocs/"
+alias ww="cd /c/xampp/htdocs/"
