@@ -33,11 +33,6 @@ ZSH_THEME="pure"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -45,6 +40,11 @@ ZSH_THEME="pure"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -92,14 +92,19 @@ source $ZSH/oh-my-zsh.sh
 # }
 
 # command aliases
+alias gst="git status"
+alias gaa="git add ."
 alias gcm="git commit -m"
-alias gpl="git pull origin"
 alias gps="git push origin"
+alias gpl="git pull origin"
+alias gdf="git diff"
+alias gck="git checkout"
 alias glog_="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
 alias glog__="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
 alias glog___="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'"
 
 # default editor aliases
+alias am="atom ."
 alias -s rb=atom
 alias -s js=atom
 alias -s txt=atom
@@ -110,4 +115,18 @@ alias -s css=atom
 alias -s scss=atom
 alias -s md=atom
 
-alias ww="cd /c/xampp/htdocs/"
+# make sure the file is chmod +x
+alias wp='php C:/WPCLI/wp.phar'
+
+function maria {
+  /c/xampp-7/mysql/bin/mysql --host=localhost --user=$1 --password=$2
+}
+
+function ww {
+  if [ "$1" ]
+    then
+      cd /c/xampp-7/htdocs/$1/wp-content/themes/ && ls
+    else
+      cd /c/xampp-7/htdocs/
+  fi
+}
