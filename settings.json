@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.scrollBeyondLastLine": false,
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "editor.useTabStops": true,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    // Controls if the editor should automatically format the line after typing
+    "editor.formatOnType": true,
+    // Controls whether the editor should render whitespace characters
+    "editor.renderWhitespace": true,
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    // Controls whether the editor has code folding enabled
+    // "editor.folding": true,
+    // Remove trailing auto inserted whitespace
+    "editor.trimAutoWhitespace": true
+}

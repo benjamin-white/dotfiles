@@ -1,3 +1,3 @@
-# **For use with Babun, oh-my-zsh & Minty**
+# **dotdotfiles**
 
-_See zshhelp for shortcut tips & tricks._
+A few handy settings for zShell and VSCode
